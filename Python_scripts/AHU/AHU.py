@@ -240,7 +240,7 @@ def AHU_assessment(module_to_run, meas_BMS_data=0, meas_EK_data=0, start_time=da
         
      
     
-    if "1.6.0" in module_to_run:
+    if "1.0.0" in module_to_run:
         # Plots the data without cleaning
         start=min(np.where(meas_time>start_time)[0])
         end=max(np.where(meas_time<end_time)[0])
@@ -435,7 +435,7 @@ def AHU_assessment(module_to_run, meas_BMS_data=0, meas_EK_data=0, start_time=da
         # Ends the module and returns a dataframe containing the analysis results
         return pd.DataFrame(np.column_stack([meas_eff_median, meas_eff_IQR, meas_eff_IQR_q1, meas_eff_IQR_q3, meas_eff_bot_lim_1_5_IQR, meas_eff_top_lim_1_5_IQR, meas_eff_length]), columns=['Median', 'IQR', 'Q1', 'Q3', 'Bottom limit', 'Top limit', 'Number of datapoints'])
         
-    if "1.6.2" in module_to_run:
+    if "1.1.0" in module_to_run:
         
         
         # Clean data to ensure only max rotation of HE
