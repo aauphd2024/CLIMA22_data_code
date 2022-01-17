@@ -77,7 +77,7 @@ for i in range(len(KOMF01_EL_df)):
 
 #%% ######################## Analysis for the AHU and all components #########################################
 # Set which modules to run, to run several modules at once, input as "x.x.x","x.x.x"...
-modules_to_run=["1.6.2"]
+modules_to_run=["0.0.0", "1.0.0", "1.1.0"]
 
 # Contains specs for the AHu and components
 specs={"spec_sheet_fan" : KOMF01_FAN_df,
